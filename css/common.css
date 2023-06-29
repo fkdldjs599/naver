@@ -1,0 +1,145 @@
+body{
+    font-size:12px;
+    line-height:18px;
+    font-family: -apple-system, BlinkMacSystemFont,'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic NEO', 'Helvetica', sans-serif;
+    color:#202020;
+}
+
+.blind{
+    position:absolute;
+    clip:rect(1px 1px 1px 1px);
+    z-index:-1;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    border:none;
+}
+
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.skip-menu{
+    position:relative;
+    z-index:999;
+}
+
+/* .skip-menu li a{
+    position:absolute;
+    top:-50px;
+    left:0px;
+    width:100%;
+    height:50px;
+    background:#000;
+    color:white;
+    text-align:center;
+    line-height:50px;
+}*/
+.skip-menu li a{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:1px;
+    height:1px;
+    background:#000;
+    color:white;
+    text-align:center;
+    line-height:0px;
+    font-size:0px;
+}
+
+/*.skip-menu li a:focus{
+    top:0px;
+}*/
+.skip-menu li a:focus{
+    width:100%;
+    height:50px;
+    font-size:20px;
+    line-height:50px;
+}
+
+.thum-bg{
+    overflow:hidden;
+}
+
+.thum-bg img{
+    width:100%;
+    display:block;
+    object-fit: cover;
+    transition:250ms;
+    /*
+    object-fit
+    이미지나 비디오 태그에 사용하는 이미지 사이즈 설정 요소(css3)
+    background-size:cover,contain과 같은 기능
+    익스는 지원되지 않음
+
+    fill : (기본값) 주어진 너비와 높이에 딱 맞도록 설정 비율은 유지되지 않는다
+    contain : 가로세로 비율 유지한채 사이즈 조절
+            컨테이너의 사이즈가 맞지 않는다면 영역을 남긴다.
+    cover : 가로세로 비율 유지한채 사이즈 조절
+              컨테이너의 사이즈가 맞지 않는다면 이미지가 잘린다.
+    none : 아무것도 하지 않고 이미지 사이즈 유지
+    scale-down : none이랑 contain중에서 적절한 것을 찾아서 적용
+
+    */
+}
+
+.thum-bg:hover img{
+    transform:scale(1.1);
+}
+
+
+.h-top-wrapper .logo a:after,
+.search-wrapper .search-btn:after,
+.search-wrapper .keyboard-btn:after,
+.search-wrapper .auto-btn:after,
+.top-menu-wrapper .link-start:after,
+.top-menu-wrapper .link-junior:after,
+.top-menu-wrapper .link-bean:after,
+.gnb .gnb-list1 .gnb-item .icon-mail:before,
+.gnb .gnb-list1 .gnb-item .icon-shop:after,
+.gnb .gnb-list1 .gnb-item .icon-shoplive:after,
+.gnb .gnb-list1 .gnb-item .icon-tv:before,
+.gnb .gnb-more-btn:after,
+.weather-list .weather-item .level2:before,
+.weather-list .weather-item .level3:before,
+.headline-list .headline .head-tit:after,
+.news-category .news-title:before,
+.news-category .news-title:after,
+.news-list .set-list .icon-list:after,
+.news-list .set-list .icon-tile:after,
+.news-list .set-list .icon-set:after,
+.media-wrapper .prev-btn:after,
+.media-wrapper .next-btn:after,
+.post-list-box .set-btn:before,
+.item-box button:after,
+.layout1 .icon-play,
+.content-list3 .funding-title >a:after,
+.more-btn-wrapper .more-btn:before,
+.login-wrapper .login-link .icon-naver,
+.login-link-box .login-id:before,
+.login-link-box .join-link:before,
+.cardnews-wrapper .card-link-box .card-info:before,
+.cardnews-wrapper .nav-box button:after,
+.notice-wrapper .link-sitemap:after,
+.fix-btn .btn-mode:after,
+.fix-btn .btn-top:after
+{
+    background-image: url("../images/sp_main_947f65.png");
+    background-repeat: no-repeat;
+    background-size:442px;
+}
+
+.trend-wrapper .trend-list .title:before,
+.trend-wrapper .trend-list .title:after,
+.btn-box button:after,
+.deal-list .deal-title .title a:before,
+.deal-list .deal-item-list .icon-plus,
+.deal-list .deal-item-list .thum-bg:first-of-type:before
+{
+    background-image:url("../images/sp_shop_359e62.png");
+    background-repeat: no-repeat;
+    background-size:129px;
+}
