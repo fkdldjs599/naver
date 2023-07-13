@@ -1101,6 +1101,7 @@ input{
 .ad-right-wrapper{
     width:100%;
     margin-bottom:30px;
+    overflow:hidden;
 }
 .ad-right a{
     display:block;
