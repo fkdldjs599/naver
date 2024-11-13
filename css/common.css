@@ -89,6 +89,9 @@ body{
 .thum-bg:hover img{
     transform:scale(1.1);
 }
+.thum-bg:hover img.nohover{
+    transform:none;
+}
 
 
 .h-top-wrapper .logo a:after,

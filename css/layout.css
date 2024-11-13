@@ -1631,6 +1631,7 @@ input{
 .partner-right .project-item{
     max-width:150px;
     overflow:hidden;
+    display: inline-block;
 }
 .partner-right .project-item:first-of-type{
     margin-right:50px;
